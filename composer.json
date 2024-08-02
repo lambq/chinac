@@ -1,0 +1,39 @@
+{
+    "name": "lambq\/chinac",
+    "description": "Package description here.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "laravel6",
+        "php",
+        "php 7.4"
+    ],
+    "authors": [
+        {
+            "name": "cbter",
+            "email": "cbterli@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^6.0.0|^7.0.0|^8.0.0|^9.0.0|^10.0.0|^11.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lambq\\Chinac\\": "src"
+        },
+        "files": [
+            "src/Helper/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lambq\\Chinac\\ChinacServiceProvider"
+            ]
+        }
+    }
+}
